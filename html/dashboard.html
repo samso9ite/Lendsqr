@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="Samso9te" />
+        <title>Lendsqr</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700&display=swap">
+    </head>
+    <body style="background-color: #fbfbfb;">
+        <header style="background-color: white;">
+            <nav class="navbar navbar-expand-lg" style="padding-left: 1.3rem !important;">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="javascript:void(0)"><img src="./assets/SVGS/logo.svg" /></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="mynavbar" style="padding-left: 8rem;">
+                    <div class="input-group" style="width: 35%;">
+                        <input type="text" class="form-control" placeholder="Search for anything" style="border-top-left-radius: 13px; border-bottom-left-radius: 13px;">
+                        <button class="btn" style="background-color: #39CDCC; color: white; border-top-right-radius: 13px; border-bottom-right-radius:13px;"  type="submit"><i class="fa fa-search" style="margin:auto 10px auto 10px ;"></i></button>
+                    </div>
+                    <ul class="navbar-nav ms-auto" style="padding-right: 5%; " >
+                      <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">Docs</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)"><img src="./assets/bell.png" /></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)"><img src="./assets/SVGS/avatar.svg" /></a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link nav" href="javascript:void(0)">Ayodeji  <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown">
+                          </button>
+                        </a>
+                       </li>
+                    </ul>
+                   
+                  </div>
+                </div>
+              </nav>
+        </header>
+        <!-- Borrower Navigation -->
+            <div class="row flex-nowrap">
+                <div class=" col-md-3 col-xl-2 px-sm-4 bg-white" >
+                    <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-5 text-white min-vh-100">
+                        <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link align-middle px-0">
+                                   <img src="./assets/SVGS/briefcase.svg" /> <span class="ms-1 d-none d-sm-inline">Switch Organization</span>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link inactive align-middle px-0">
+                                   <img src="./assets/SVGS/home.svg" /> <span class="ms-1 d-none d-sm-inline">Dashboard</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                    <span class="ms-1 d-none d-sm-inline" style="font-size: 12px; font-weight: 600;">CUSTOMERS</span> </a>
+                                <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+                                    <li class="w-100">
+                                        <a href="#" class="nav-link px-0 inactive"> <img src="./assets/SVGS/user-friends.svg" /> <span class="d-none d-sm-inline">Users</span>  </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link px-0 inactive"> <img src="./assets/SVGS/guarantors.svg" /> <span class="d-none d-sm-inline">Guarantors</span> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link px-0 inactive"> <img src="./assets/SVGS/loans.svg" /> <span class="d-none d-sm-inline">Loans</span> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link px-0 inactive"> <img src="./assets/SVGS/decision.svg" /> <span class="d-none d-sm-inline">Decision Models</span> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link px-0 inactive"> <img src="./assets/SVGS/piggy.svg" /> <span class="d-none d-sm-inline">Savings</span> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link px-0 inactive"> <img src="./assets/SVGS/loan-request.svg" /> <span class="d-none d-sm-inline">Loan Request</span> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link px-0 inactive"> <img src="./assets/SVGS/whitelist.svg" /> <span class="d-none d-sm-inline">Whitelist</span> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link px-0 inactive"> <img src="./assets/SVGS/karma.svg" /> <span class="d-none d-sm-inline">Karma</span> </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="mt-2">
+                                <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                    <span class="ms-1 d-none d-sm-inline"  style="font-size: 12px; font-weight: 600;">BUSINESSES</span> </a>
+                                <ul class="collapse show nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
+                                    <li class="w-100">
+                                        <a href="#" class="nav-link px-0 inactive"> <img src="./assets/SVGS/briefcase.svg" opacity="50%"/> <span class="d-none d-sm-inline">Organization</span>  </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link px-0 inactive"> <img src="./assets/SVGS/loan-request.svg" /> <span class="d-none d-sm-inline">Loan Products</span> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link px-0 inactive"> <img src="./assets/SVGS/saving-products.svg" /> <span class="d-none d-sm-inline">Savings Products</span> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link px-0 inactive"> <img src="./assets/SVGS/coin.svg" /> <span class="d-none d-sm-inline">Fees and Charges</span> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link px-0  inactive"> <img src="./assets/SVGS/transactions.svg" /> <span class="d-none d-sm-inline">Transactions</span> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link px-0 inactive"> <img src="./assets/SVGS/services.svg" /> <span class="d-none d-sm-inline">Services</span> </a>
+                                    </li>
+                                    <li>
+                                   
+                                        <a href="#" class="nav-link px-0 inactive"> <img src="./assets/SVGS/service-account.svg" /> <span class="d-none d-sm-inline">Service Account</span> </a>
+                                    </li>
+                                    <li>
+                                    <li>
+                                        <a href="#" class="nav-link px-0 inactive"> <img src="./assets/SVGS/reports.svg" /> <span class="d-none d-sm-inline">Report</span> </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="mt-2">
+                                <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                    <span class="ms-1 d-none d-sm-inline"  style="font-size: 12px; font-weight: 600;">SETTINGS</span> </a>
+                                <ul class="collapse show nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
+                                    <li class="w-100">
+                                        <a href="#" class="nav-link px-0 inactive"> <img src="./assets/SVGS/preferences.svg" /> <span class="d-none d-sm-inline">Preferences</span>  </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link px-0 inactive"> <img src="./assets/SVGS/fees.svg" /> <span class="d-none d-sm-inline">Fees and Pricing</span> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link px-0 inactive"> <img src="./assets/SVGS/audit-logs.svg" /> <span class="d-none d-sm-inline">Audit Logs</span> </a>
+                                    </li>
+                                   
+                                </ul>
+                            </li>
+                         
+                        </ul>
+                        <hr>
+                    </div>
+                </div>
+
+                <!-- Main Content -->
+                <div class="mt-5"  style="padding-left: 4rem;">
+                    <!--  Stat Section -->
+                    <section>
+                        <h4>Users</h4>
+                        <div class="row mt-4" >
+                            <div class="col-lg-2">
+                                <div class="card" style="box-shadow: 3px 5px 20px 0px #0000000A;
+                                ">
+                                    <div class="card-body">
+                                        <img src="./assets/SVGS/card1_img.svg" />
+                                        <p class="mt-2" style="font-weight: 500;">USERS</p>
+                                        <h3 class="mt-2">2,453</h3>
+                                    </div>
+                                  </div>
+                                  
+                            </div>
+                            <div class="col-lg-2" style="margin-left: 0.5rem;">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <img src="./assets/SVGS/card2_img.svg" />
+                                        <p class="mt-2" style="font-weight: 500;">ACTIVE USERS</p>
+                                        <h3 class="mt-2">2,453</h3>
+                                    </div>
+                                  </div>
+                                  
+                            </div>
+                            <div class="col-lg-2" style="margin-left: 0.5rem;">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <img src="./assets/SVGS/card3_img.svg" />
+                                        <p class="mt-2" style="font-weight: 500;">USERS WITH LOANS</p>
+                                        <h3 class="mt-2">2,453</h3>
+                                    </div>
+                                  </div>
+                                  
+                            </div>
+                            <div class="col-lg-2" style="margin-left: 0.5rem;">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <img src="./assets/SVGS/card4_img.svg" />
+                                        <p class="mt-2" style="font-weight: 500;">USERS WITH SAVINGS</p>
+                                        <h3 class="mt-2">2,453</h3>
+                                    </div>
+                                  </div>
+                                  
+                            </div>
+                        </div>
+                    </section>
+                   
+                    <section class="mt-5">
+                        <div class="row">
+                            <div class="col-lg-10">
+                                <div class="card" style="width: 92%;">
+                                    <div class="card-body">
+                                    <table class="table" >
+                                        <thead>
+                                            <tr>
+                                                <th>ORGANIZATION</th>
+                                                <th>USERNAME</th>
+                                                <th>EMAIL</th>
+                                                <th>PHONE NUMBER</th>
+                                                <th>DATE JOINED</th>
+                                                <th>STATUS</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Lendsqr</td>
+                                                <td>Adedeji</td>
+                                                <td>adedeji@lendsqr.com</td>
+                                                <td>08112417083</td>
+                                                <td>May 15, 2020 10:00 AM</td>
+                                                <td><span class="badge rounded-pill success-pill">Warning</span></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lendsqr</td>
+                                                <td>Adedeji</td>
+                                                <td>adedeji@lendsqr.com</td>
+                                                <td>08112417083</td>
+                                                <td>May 15, 2020 10:00 AM</td>
+                                                <td><span class="badge rounded-pill inactive-pill">Inactive</span></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lendsqr</td>
+                                                <td>Adedeji</td>
+                                                <td>adedeji@lendsqr.com</td>
+                                                <td>08112417083</td>
+                                                <td>May 15, 2020 10:00 AM</td>
+                                                <td><span class="badge rounded-pill danger-pill">Blacklisted</span></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lendsqr</td>
+                                                <td>Adedeji</td>
+                                                <td>adedeji@lendsqr.com</td>
+                                                <td>08112417083</td>
+                                                <td>May 15, 2020 10:00 AM</td>
+                                                <td><span class="badge rounded-pill success-pill">Warning</span></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lendsqr</td>
+                                                <td>Adedeji</td>
+                                                <td>adedeji@lendsqr.com</td>
+                                                <td>08112417083</td>
+                                                <td>May 15, 2020 10:00 AM</td>
+                                                <td><span class="badge rounded-pill inactive-pill">Inactive</span></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lendsqr</td>
+                                                <td>Adedeji</td>
+                                                <td>adedeji@lendsqr.com</td>
+                                                <td>08112417083</td>
+                                                <td>May 15, 2020 10:00 AM</td>
+                                                <td><span class="badge rounded-pill danger-pill">Blacklisted</span></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lendsqr</td>
+                                                <td>Adedeji</td>
+                                                <td>adedeji@lendsqr.com</td>
+                                                <td>08112417083</td>
+                                                <td>May 15, 2020 10:00 AM</td>
+                                                <td><span class="badge rounded-pill success-pill">Active</span></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lendsqr</td>
+                                                <td>Adedeji</td>
+                                                <td>adedeji@lendsqr.com</td>
+                                                <td>08112417083</td>
+                                                <td>May 15, 2020 10:00 AM</td>
+                                                <td><span class="badge rounded-pill pending-pill" >Pending</span></td>
+                                                <td></td>
+                                            </tr>
+                                        <tbody>
+                                </div>
+                            </div>
+                           
+                        </div>
+
+                       
+                    </section>
+                </div>
+            </div>
+        <!-- End of Borrower Navigation -->
+    </div>
+        
+    </body>
+</html>
+
+<style>
+    .inactive{
+        opacity: 70% !important;
+    }
+    .pending-pill{
+        background-color: rgba(233, 178, 0, 0.1); 
+        color: #E9B200;     
+    }
+    .success-pill{
+        background-color: rgba(57, 205, 98, 0.1); 
+        color: #39CD62;     
+    }
+    .danger-pill{
+        background-color: rgba(228, 3, 59, 0.1); 
+        color: #E4033B;     
+    }
+    .inactive-pill{
+        background-color: (84, 95, 125, 0.1); 
+        color: #545F7D;     
+    }
+    table.table th {
+            border-bottom: none !important;
+        }
+</style>
