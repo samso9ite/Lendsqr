@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="Samso9te" />
+        <title>Lendsqr</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700&display=swap">
+    </head>
+    <body style="background-color: #fbfbfb;">
+        <header style="background-color: white;">
+            <nav class="navbar navbar-expand-lg" style="padding-left: 1.3rem !important;">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="javascript:void(0)"><img src="./assets/SVGS/logo.svg" /></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="mynavbar" style="padding-left: 8rem;">
+                    <div class="input-group" style="width: 35%;">
+                        <input type="text" class="form-control" placeholder="Search for anything" style="border-top-left-radius: 13px; border-bottom-left-radius: 13px;">
+                        <button class="btn" style="background-color: #39CDCC; color: white; border-top-right-radius: 13px; border-bottom-right-radius:13px;"  type="submit"><i class="fa fa-search" style="margin:auto 10px auto 10px ;"></i></button>
+                    </div>
+                    <ul class="navbar-nav ms-auto" style="padding-right: 5%; " >
+                      <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">Docs</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)"><img src="./assets/bell.png" /></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)"><img src="./assets/SVGS/avatar.svg" /></a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link nav" href="javascript:void(0)">Ayodeji  <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown">
+                          </button>
+                        </a>
+                       </li>
+                    </ul>
+                   
+                  </div>
+                </div>
+              </nav>
+        </header>
+        <!-- Borrower Navigation -->
+            <div class="row flex-nowrap">
+                <div class=" col-md-3 col-xl-2 px-sm-4 bg-white" >
+                    <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-5 text-white min-vh-100">
+                        <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link align-middle px-0">
+                                   <img src="./assets/SVGS/briefcase.svg" /> <span class="ms-1 d-none d-sm-inline">Switch Organization</span>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link inactive align-middle px-0">
+                                   <img src="./assets/SVGS/home.svg" /> <span class="ms-1 d-none d-sm-inline">Dashboard</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                    <span class="ms-1 d-none d-sm-inline" style="font-size: 12px; font-weight: 600;">CUSTOMERS</span> </a>
+                                <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+                                    <li class="w-100">
+                                        <a href="#" class="nav-link px-0 inactive"> <img src="./assets/SVGS/user-friends.svg" /> <span class="d-none d-sm-inline">Users</span>  </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link px-0 inactive"> <img src="./assets/SVGS/guarantors.svg" /> <span class="d-none d-sm-inline">Guarantors</span> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link px-0 inactive"> <img src="./assets/SVGS/loans.svg" /> <span class="d-none d-sm-inline">Loans</span> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link px-0 inactive"> <img src="./assets/SVGS/decision.svg" /> <span class="d-none d-sm-inline">Decision Models</span> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link px-0 inactive"> <img src="./assets/SVGS/piggy.svg" /> <span class="d-none d-sm-inline">Savings</span> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link px-0 inactive"> <img src="./assets/SVGS/loan-request.svg" /> <span class="d-none d-sm-inline">Loan Request</span> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link px-0 inactive"> <img src="./assets/SVGS/whitelist.svg" /> <span class="d-none d-sm-inline">Whitelist</span> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link px-0 inactive"> <img src="./assets/SVGS/karma.svg" /> <span class="d-none d-sm-inline">Karma</span> </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="mt-2">
+                                <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                    <span class="ms-1 d-none d-sm-inline"  style="font-size: 12px; font-weight: 600;">BUSINESSES</span> </a>
+                                <ul class="collapse show nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
+                                    <li class="w-100">
+                                        <a href="#" class="nav-link px-0 inactive"> <img src="./assets/SVGS/briefcase.svg" opacity="50%"/> <span class="d-none d-sm-inline">Organization</span>  </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link px-0 inactive"> <img src="./assets/SVGS/loan-request.svg" /> <span class="d-none d-sm-inline">Loan Products</span> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link px-0 inactive"> <img src="./assets/SVGS/saving-products.svg" /> <span class="d-none d-sm-inline">Savings Products</span> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link px-0 inactive"> <img src="./assets/SVGS/coin.svg" /> <span class="d-none d-sm-inline">Fees and Charges</span> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link px-0  inactive"> <img src="./assets/SVGS/transactions.svg" /> <span class="d-none d-sm-inline">Transactions</span> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link px-0 inactive"> <img src="./assets/SVGS/services.svg" /> <span class="d-none d-sm-inline">Services</span> </a>
+                                    </li>
+                                    <li>
+                                   
+                                        <a href="#" class="nav-link px-0 inactive"> <img src="./assets/SVGS/service-account.svg" /> <span class="d-none d-sm-inline">Service Account</span> </a>
+                                    </li>
+                                    <li>
+                                    <li>
+                                        <a href="#" class="nav-link px-0 inactive"> <img src="./assets/SVGS/reports.svg" /> <span class="d-none d-sm-inline">Report</span> </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="mt-2">
+                                <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                    <span class="ms-1 d-none d-sm-inline"  style="font-size: 12px; font-weight: 600;">SETTINGS</span> </a>
+                                <ul class="collapse show nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
+                                    <li class="w-100">
+                                        <a href="#" class="nav-link px-0 inactive"> <img src="./assets/SVGS/preferences.svg" /> <span class="d-none d-sm-inline">Preferences</span>  </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link px-0 inactive"> <img src="./assets/SVGS/fees.svg" /> <span class="d-none d-sm-inline">Fees and Pricing</span> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link px-0 inactive"> <img src="./assets/SVGS/audit-logs.svg" /> <span class="d-none d-sm-inline">Audit Logs</span> </a>
+                                    </li>
+                                   
+                                </ul>
+                            </li>
+                         
+                        </ul>
+                        <hr>
+                    </div>
+                </div>
+
+                <!-- Main Content -->
+                <div class="mt-5"  style="padding-left: 4rem;">
+                    <!--  Stat Section -->
+                    <section>
+                        <p> <img src="./assets/SVGS/back_arrow.svg"/> Back to Users</p>
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <h4>User Details</h4> 
+                            </div>
+                           <div class="col-lg-6">
+                                <span class=" ms-auto" style="float:right;">
+                                    <button class="btn btn-outline-danger">BLACLIST USER</button>  <button class="btn btn-outline-success">ACTIVATE USER</button>
+                                </span>
+                            </div>
+                        </div>
+                    </section>
+                   
+                    <section class="mt-5">
+                        <div class="row">
+                            <div class="col-lg-9">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="row mb-4">
+                                            <div class="col-lg-4" style="border-right: 1px solid #e5e7eb;">
+                                                <img src="./assets/SVGS/avatar2.svg" style="float: left; margin-right: 2%;"/> <span class="pt-5"><h5 style="padding-left: 3rem">Grace Effiom</h5><p>LSQFf587g90</p></span>
+                                            </div>
+                                            <div class="col-lg-2">
+                                                <p>User's Tier</p>
+                                                <img src="./assets/SVGS/star-fill.svg"/><img src="./assets/SVGS/star.svg"/><img src="./assets/SVGS/star.svg"/>
+                                            </div>
+                                            <div class="col-lg-2" style="border-left: 1px solid #e5e7eb;">
+                                                <h5>#200,000.00</h5>
+                                                <p>3065073998/Firstbank</p>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-5">
+                                            <div class="col-lg-2">
+                                                <p>General Details</p>
+                                            </div>
+                                            <div class="col-lg-2">
+                                                <p>Documents</p>
+                                            </div>
+                                            <div class="col-lg-2">
+                                                <p>Bank Details</p>
+                                            </div>
+                                            <div class="col-lg-1">
+                                                <p>Loans</p>
+                                            </div>
+                                            <div class="col-lg-1 ms-auto">
+                                                <p>Savings</p>
+                                            </div>
+                                            <div class="col-lg-2 ms-auto" >
+                                                <p>App and System</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="mt-5">
+                        <div class="row">
+                            <div class="col-lg-9">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <p style="font-weight: 600;">Personal Information</p>
+                                        <div class="row " style="color: #545F7D;">
+                                            <div class="col-lg-2">
+                                                <p style="font-size: 12px;">FULL NAME</p>
+                                                <p style="font-weight: 500;">Grace Effiom</p>
+                                            </div>
+                                            <div class="col-lg-2">
+                                                <p style="font-size: 12px;">PHONE NUMBER</p>
+                                                <p style="font-weight: 500;">08112417083</p>
+                                            </div>
+                                            <div class="col-lg-2">
+                                                <p style="font-size: 12px;">EMAIL ADDRESS</p>
+                                                <p style="font-weight: 500;">grace@gmail.com</p>
+                                            </div>
+                                            <div class="col-lg-2">
+                                                <p style="font-size: 12px;">BVN</p>
+                                                <p style="font-weight: 500;">08112417083</p>
+                                            </div>
+                                            <div class="col-lg-2">
+                                                <p style="font-size: 12px;">GENDER</p>
+                                                <p style="font-weight: 500;">Female</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="row mt-3" style="color: #545F7D;">
+                                            <div class="col-lg-2">
+                                                <p style="font-size: 12px;">MARITAL STATUS</p>
+                                                <p style="font-weight: 500;">Single</p>
+                                            </div>
+                                            <div class="col-lg-2">
+                                                <p style="font-size: 12px;">CHILDREN</p>
+                                                <p style="font-weight: 500;">None</p>
+                                            </div>
+                                            <div class="col-lg-2">
+                                                <p style="font-size: 12px;">TYPE OF RESIDENCE</p>
+                                                <p style="font-weight: 500;">Parent's Apartment</p>
+                                            </div>
+                                        </div>
+                                        <hr>
+
+                                        <div>
+                                            <p style="font-weight: 600;">Education and Employment</p>
+                                                    <div class="row " style="color: #545F7D;">
+                                                        <div class="col-lg-2">
+                                                            <p style="font-size: 12px;">LEVEL OF EDUCATION</p>
+                                                            <p style="font-weight: 500;">B.Sc</p>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <p style="font-size: 12px;">EMPLOYEMENT STATUS</p>
+                                                            <p style="font-weight: 500;">Employed</p>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <p style="font-size: 12px;">SECTOR OF EMPLOYEMENT</p>
+                                                            <p style="font-weight: 500;">FinTech</p>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <p style="font-size: 12px;">DURATION OF EMPLOYEMENT</p>
+                                                            <p style="font-weight: 500;">2 years</p>
+                                                        </div>
+                                                       
+                                                    </div>
+            
+                                                    <div class="row mt-3" style="color: #545F7D;">
+                                                        <div class="col-lg-2">
+                                                        <p style="font-size: 12px;">OFFICE EMAIL</p>
+                                                            <p style="font-weight: 500;">grace@lendsqr.com</p>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <p style="font-size: 12px;">MONTHLY INCOME</p>
+                                                            <p style="font-weight: 500;">#20,000.00 - #40,000.00</p>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <p style="font-size: 12px;">TYPE OF RESIDENCE</p>
+                                                            <p style="font-weight: 500;">Parent's Apartment</p>
+                                                        </div>
+                                                    </div>
+                                                    <hr>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-lg-9">
+                                                   <p style="font-weight: 600;">Socials</p>
+                                                        <div class="row " style="color: #545F7D;">
+                                                            <div class="col-lg-3">
+                                                                <p style="font-size: 12px;">TWITTER</p>
+                                                                <p style="font-weight: 500;">@grace_effiom</p>
+                                                            </div>
+                                                            <div class="col-lg-3">
+                                                                <p style="font-size: 12px;">FACEBOOK</p>
+                                                                <p style="font-weight: 500;">Grace Effiom</p>
+                                                            </div>
+                                                            <div class="col-lg-3">
+                                                                <p style="font-size: 12px;">INSTAGRAM</p>
+                                                                <p style="font-weight: 500;">grace@gmail.com</p>
+                                                            </div>
+                                                        </div>
+                
+                                                       
+                                                    </div>
+                                                    <hr>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-lg-9">
+                                            <p style="font-weight: 600;">Guarantor</p>
+                                            <div class="row " style="color: #545F7D;">
+                                                <div class="col-lg-3">
+                                                    <p style="font-size: 12px;">FULL NAME</p>
+                                                    <p style="font-weight: 500;">Grace Effiom</p>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <p style="font-size: 12px;">PHONE NUMBER</p>
+                                                    <p style="font-weight: 500;">08112417083</p>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <p style="font-size: 12px;">EMAIL ADDRESS</p>
+                                                    <p style="font-weight: 500;">grace@gmail.com</p>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <p style="font-size: 12px;">RELATIONSHIP</p>
+                                                    <p style="font-weight: 500;">Sister</p>
+                                                </div>
+                                               
+                                            </div>
+                                        </div>
+                                                <hr>
+                                                <div class="row " style="color: #545F7D;">
+                                                    <div class="col-lg-3">
+                                                        <p style="font-size: 12px;">FULL NAME</p>
+                                                        <p style="font-weight: 500;">Grace Effiom</p>
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <p style="font-size: 12px;">PHONE NUMBER</p>
+                                                        <p style="font-weight: 500;">08112417083</p>
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <p style="font-size: 12px;">EMAIL ADDRESS</p>
+                                                        <p style="font-weight: 500;">grace@gmail.com</p>
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <p style="font-size: 12px;">RELATIONSHIP</p>
+                                                        <p style="font-weight: 500;">Sister</p>
+                                                    </div>
+                                                   
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+
+                       
+                         
+
+                        
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        <!-- End of Borrower Navigation -->
+    </div>
+        
+    </body>
+</html>
+
+<style>
+    .inactive{
+        opacity: 70% !important;
+    }
+    .pending-pill{
+        background-color: rgba(233, 178, 0, 0.1); 
+        color: #E9B200;     
+    }
+    .success-pill{
+        background-color: rgba(57, 205, 98, 0.1); 
+        color: #39CD62;     
+    }
+    .danger-pill{
+        background-color: rgba(228, 3, 59, 0.1); 
+        color: #E4033B;     
+    }
+    .inactive-pill{
+        background-color: (84, 95, 125, 0.1); 
+        color: #545F7D;     
+    }
+    table.table th {
+            border-bottom: none !important;
+        }
+</style>

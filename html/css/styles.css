@@ -93,10 +93,10 @@ body {
 
 hr {
   margin: 1rem 0;
-  color: inherit;
+  color: #213F7D;
   background-color: currentColor;
   border: 0;
-  opacity: 0.25;
+  opacity: 10%;
 }
 
 hr:not([size]) {
