@@ -1,0 +1,26 @@
+
+/* Custom CSS for equal halves and background colors */
+.split-container {
+display: flex;
+height: 100vh; /* Full viewport height */
+}
+
+.left-half {
+flex: 1; /* Equal width for both halves */
+background-color: (254,254,254,0.1); /* Background color for left half */
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.right-half {
+flex: 1; /* Equal width for both halves */
+background-color: #fff; /* Background color for right half */
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.pad{
+   margin-left: 10px !important;
+}
