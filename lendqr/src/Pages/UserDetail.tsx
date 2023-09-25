@@ -1,6 +1,18 @@
 import MainLayout from "../components/layout/MainLayout"
+import CustomAxiosInstance from '../../Api'
+import {useState, useEffect} from 'react'
 
 const UserDetail = ( ) => {
+    const [data, setData] = useState()
+
+    useEffect(() => {
+        CustomAxiosInstance.get('users')
+        .then(res => {
+            console.log(res.data);
+            setData(res.data)
+        })
+    })
+
     return(
         <MainLayout>
             <section>
