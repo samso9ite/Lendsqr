@@ -1,22 +1,23 @@
 import MainLayout from "../components/layout/MainLayout"
-import CustomAxiosInstance from '../../Api'
+import Api from '../Api'
 import {useState, useEffect} from 'react'
+import {useParams, Link} from 'react-router-dom'
 
-const UserDetail = ( ) => {
-    const [data, setData] = useState()
-
-    useEffect(() => {
-        CustomAxiosInstance.get('users')
-        .then(res => {
-            console.log(res.data);
-            setData(res.data)
-        })
-    })
-
+const UserDetail = () => {
+    const {id} = useParams()
+    console.log(id);
+    
+    // get users from localstorage and search through
+    const storedData:any = localStorage.getItem('users')
+    const users =  JSON.parse(storedData)
+    const user = users.find((item:any) => item.uuid === id)
+    console.log(user);
+    
     return(
         <MainLayout>
             <section>
-                <p> <img src="./assets/SVGS/back_arrow.svg"/> Back to Users</p>
+                <p> <Link to="/"> 
+                <img src={process.env.PUBLIC_URL+'/assets/SVGS/back_arrow.svg'} />  </Link>Back to Users</p>
                 <div className="row">
                     <div className="col-lg-3">
                         <h4>User Details</h4> 
@@ -36,11 +37,11 @@ const UserDetail = ( ) => {
                             <div className="card-body" style={{paddingLeft: '3%'}}>
                                 <div className="row mb-4">
                                     <div className="col-lg-4" style={{borderRight: '1px solid #e5e7eb'}}>
-                                        <img src="./assets/SVGS/avatar2.svg" style={{float: 'left', marginRight: '2%'}}/> <span className="pt-5"><h5 style={{paddingLeft: '3rem'}}>Grace Effiom</h5><p>LSQFf587g90</p></span>
+                                        <img src={user.avatar ? user.avatar : process.env.PUBLIC_URL+'/assets/SVGS/avatar2.svg'} className="rounded-circle" style={{float: 'left', marginRight: '2%'}}/> <span className="pt-5"><h5 style={{paddingLeft: '3rem'}}>{user.name}</h5><p>LSQFf587g90</p></span>
                                     </div>
                                     <div className="col-lg-2">
                                         <p>User's Tier</p>
-                                        <img src="./assets/SVGS/star-fill.svg"/><img src="./assets/SVGS/star.svg"/><img src="./assets/SVGS/star.svg"/>
+                                        <img src={process.env.PUBLIC_URL+'/assets/SVGS/star-fill.svg'}/><img src={process.env.PUBLIC_URL+'/assets/SVGS/star.svg'}/><img src={process.env.PUBLIC_URL+'/assets/SVGS/star.svg'}/>
                                     </div>
                                     <div className="col-lg-2" style={{borderLeft: '1px solid #e5e7eb'}}>
                                         <h5>#200,000.00</h5>
@@ -82,38 +83,38 @@ const UserDetail = ( ) => {
                                 <div className="row " style={{color: '#545F7D'}}>
                                     <div className="col-lg-2">
                                         <p  className="mb-0" style={{fontSize: '12px'}}>FULL NAME</p>
-                                        <p style={{fontWeight: '600'}}>Grace Effiom</p>
+                                        <p style={{fontWeight: '600'}}>{user.name}</p>
                                     </div>
                                     <div className="col-lg-2">
                                         <p  className="mb-0" style={{fontSize: '12px'}}>PHONE NUMBER</p>
-                                        <p style={{fontWeight: '600'}}>08112417083</p>
+                                        <p style={{fontWeight: '600'}}>{user.phone}</p>
                                     </div>
                                     <div className="col-lg-2">
                                         <p  className="mb-0" style={{fontSize: '12px'}}>EMAIL ADDRESS</p>
-                                        <p style={{fontWeight: '600'}}>grace@gmail.com</p>
+                                        <p style={{fontWeight: '600'}}>{user.email}</p>
                                     </div>
                                     <div className="col-lg-2">
                                         <p className="mb-0" style={{fontSize: '12px'}}>BVN</p>
-                                        <p style={{fontWeight: '600'}}>08112417083</p>
+                                        <p style={{fontWeight: '600'}}>{user.BVN}</p>
                                     </div>
                                     <div className="col-lg-2">
                                         <p  className="mb-0" style={{fontSize: '12px'}}>GENDER</p>
-                                        <p style={{fontWeight: '600'}}>Female</p>
+                                        <p style={{fontWeight: '600'}}>{user.gender}</p>
                                     </div>
                                 </div>
                                 
                                 <div className="row mt-3" style={{color: '#545F7D'}}>
                                     <div className="col-lg-2">
                                         <p className="mb-0" style={{fontSize: '12px'}}>MARITAL STATUS</p>
-                                        <p style={{fontWeight: '600'}}>Single</p>
+                                        <p style={{fontWeight: '600'}}>{user.marital_status}</p>
                                     </div>
                                     <div className="col-lg-2">
                                         <p className="mb-0" style={{fontSize: '12px'}}>CHILDREN</p>
-                                        <p style={{fontWeight: '600'}}>None</p>
+                                        <p style={{fontWeight: '600'}}>{user.Children}</p>
                                     </div>
                                     <div className="col-lg-2">
                                         <p className="mb-0" style={{fontSize: '12px'}}>TYPE OF RESIDENCE</p>
-                                        <p style={{fontWeight: '600'}}>Parent's Apartment</p>
+                                        <p style={{fontWeight: '600'}}>{user.type_of_residence}</p>
                                     </div>
                                 </div>
                                 <hr />
@@ -174,8 +175,6 @@ const UserDetail = ( ) => {
                                                         <p style={{fontWeight: '600'}}>grace@gmail.com</p>
                                                     </div>
                                                 </div>
-        
-                                                
                                             </div>
                                             <hr />
                                 </div>

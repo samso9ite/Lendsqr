@@ -3,7 +3,7 @@ const TopHeader = () => {
         <header className="bg-white">
         <nav className="navbar navbar-expand-lg" style={{paddingLeft: '1.3rem'}}>
             <div className="container-fluid">
-              <a className="navbar-brand" href="javascript:void(0)"><img src="./assets/SVGS/logo.svg" /></a>
+              <a className="navbar-brand" href="javascript:void(0)"><img src={process.env.PUBLIC_URL+'/assets/SVGS/logo.svg'} /></a>
               <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
                 <span className="navbar-toggler-icon"></span>
               </button>
@@ -17,10 +17,10 @@ const TopHeader = () => {
                     <a className="nav-link" href="javascript:void(0)">Docs</a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="javascript:void(0)"><img src="./assets/bell.png" /></a>
+                    <a className="nav-link" href="javascript:void(0)"><img src={process.env.PUBLIC_URL+'/assets/bell.png'} /></a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="javascript:void(0)"><img src="./assets/SVGS/avatar.svg" /></a>
+                    <a className="nav-link" href="javascript:void(0)"><img src={process.env.PUBLIC_URL+'/assets/SVGS/avatar.svg' } /></a>
                   </li>
                   <li className="nav-item dropdown">
                     <a className="nav-link nav" href="javascript:void(0)">Ayodeji  <button type="button" className="btn dropdown-toggle" data-bs-toggle="dropdown">
